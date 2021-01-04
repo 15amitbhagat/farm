@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <base href="/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Farmer </title>
+</head>
+<body>
+    
+     <nav>
+        <h4>FarmFood</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+             <%if (user){%>
+              <li><a href="/profilef">Profile</a></li>
+               <li><a href="/addproductf">Add Product</a></li>
+               <li><a href="/viewlabourf">View Labour</a></li>
+               <li><a href="/buytoolf">Buy Tools</a></li>
+               <li><a href="/auth/logoutf">Logout</a></li>
+            <%}else{%>  
+            <li><a href="/loginf">Login</a></li>
+            <li><a href="/registerf">Register</a></li>
+            <%} %>
+        </ul>
+    </nav>
+    <div class="container mt-4">
+        <div class="jumbotron">
+  <h1 class="display-4">Hire Labours</h1>
+  <p class="lead"></p>
+  <hr class="my-4">
+  <p></p>
+  <p class="lead">
+    
+  </p>
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
